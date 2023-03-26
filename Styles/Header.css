@@ -1,0 +1,423 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 0px 16px;
+    z-index: 2023;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+
+div{
+    font-family: Roboto, Arial;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hamburger_menu{
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    /* background: gray; */
+    filter: invert(1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.Right_side{
+    display: flex;
+    align-items: center;
+    width: 169px;
+}
+
+.YTlogo{
+    position: relative;
+}
+
+.PH{
+    color: rgb(173, 173, 173);
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.Hamburger-button{
+    border-radius: 30px;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    border: none;
+}
+
+.Hamburger-button:hover{
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+}
+
+.Youtube_logo{
+    height: 20px;
+    width: 90px;
+    padding: 18px 14px 18px 16px;
+    cursor: pointer;
+}
+
+.Search-bar{
+    background-color: rgb(18, 18, 18);
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    border-color: hsl(0deg 0% 19%);   
+    height: 36px;
+    padding-left: 16px;
+    padding-bottom: 2.3px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    color: rgb(227, 227, 227);
+    flex: 1;
+    width: 0px;
+    font-size: 16px;
+    font-family: Roboto, Arial;
+}
+
+.Search-bar::placeholder{
+    font-size: 16px;
+    font-family: Roboto ;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.Search-bar:focus{
+    border-color: rgb(0, 103, 159);
+    padding-left: 48px;
+    
+}
+
+.Middle{
+    display: flex;
+    align-items: center;
+    width: 728px;
+    flex: 1;
+    margin-left: 131px;
+    margin-right: 109px;
+    position: relative;
+}
+
+.Middle .Search-bar:focus{
+    margin-left: -31.5px;
+    background-image: url("");
+    /* background-color: gold; */
+}
+
+.Search-Icon{
+    height: 24px;
+    width: 24px;
+    filter: invert(1);
+
+}
+
+.Search-button{
+    width: 64px;
+    height: 40px;
+    background-color: rgb(35, 35, 35);
+    border-style: solid;
+    border-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    float: left;
+    /* margin-px; */
+}
+
+.Search-button{
+    cursor: pointer;
+    position: relative;
+
+}
+
+.Search-button .Pop{
+    background-color: rgba(106, 106, 106, 0.9); ;
+    position: absolute;
+    color: rgb(222, 222, 222);
+    margin-bottom: -117.7px;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 9.3px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.voice-search-button .Pop{
+    background-color: rgba(106, 106, 106, 0.9); ;
+    position: absolute;
+    color: rgb(222, 222, 222);
+    margin-bottom: -105.5px;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 9.3px 8px 9.9px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.Search-button:hover .Pop,
+.voice-search-button:hover .Pop,
+.create-button:hover .Pop,
+.notification-button:hover .Pop
+{
+    opacity: 1;
+    
+}
+
+
+
+.voice_search_icon{
+    height: 24px;
+    width: 24px;
+    filter: invert(1);
+}
+
+.voice-search-button{
+    background: rgb(23, 23, 23);
+    border: none;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    position: relative;
+}
+
+
+
+.voice-search-button:hover {
+    background: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.Right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+
+.create-icon,
+.notification-icon{
+    height: 24px;
+    width: 24px;
+    filter: invert(1);
+}
+
+.Middle .search-icon-inside{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    position: absolute;
+    opacity: 0;
+}
+
+.Middle .search-icon-inside .Search-bar:focus{
+    background-color: gold;
+    opacity: 1;
+}
+
+
+.Search-bar:focus .search-icon-inside{
+    opacity: 1;    
+}
+
+
+.create-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.create-button .Pop{
+    background-color: rgba(106, 106, 106, 0.9); ;
+    position: absolute;
+    color: rgb(227, 227, 227);
+    margin-bottom: -106.3px;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 9.3px 8px 9.8px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.notification-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.notification-button .Pop{
+    background-color: rgba(106, 106, 106, 0.9); ;
+    position: absolute;
+    color: rgb(222, 222, 222);
+    margin-bottom: -117.7px;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 9.3px 8px 9.8px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.Profile-Button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 20px;
+    margin-right: -5px;
+}
+
+.create-button:hover,
+.notification-button:hover{
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+.Profile-Icon{
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+}
+
+.Profile-Button:hover{
+    cursor: pointer;
+}
+
+
+.Below-main-header{
+    position: fixed;
+    background-color: rgb(15, 15, 15);
+    top: 56px;   
+    left: 70px;
+    right: 0;
+    height: 56px;
+    align-items: center;
+    display: flex;
+    z-index: 2000;
+}
+
+@media (max-width: 790px){
+    .Below-main-header{
+        left: -2px;
+    }
+}
+
+
+
+.All-button{
+    padding: 8px 12.3px;
+    margin-left: 26px;
+    font-family: Roboto;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    transition: background-color 0.30s;
+}
+
+.All-button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.text{
+    font-size: 14px;
+    font-family: Roboto;
+    white-space: nowrap;
+    margin-top: -1px;
+}
+
+.Below-main-button{
+    padding: 8px 12.3px;
+    margin-left: 12px;
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    background-color: rgb(40, 40, 40);    
+    transition: background-color 0.30s;
+}
+
+.Below-main-button:hover{
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.Below-main-text{
+    font-size: 14px;
+    font-family: Roboto;
+    white-space: nowrap;
+    margin-top: -1px;
+    color: white;
+}
+
+.Below-main-button-next{
+    padding: 13.5px 13.5px;
+    background-color: rgb(15, 15, 15);
+    border: none;  
+    border-radius: 20px;
+}
+
+.Below-main-button-next:hover{
+    background-color: rgb(63, 63, 63);
+    cursor: pointer;;
+}
+
+.Next-category{
+    height: 13px;
+    width: 13px;
+    transform: scaleX(-1);
+    filter: invert(1);
+}
+
+.Box-of-next{
+    background-color: rgb(15, 15, 15);
+    /* float: left; */
+    width: 60px;
+    height: 50px;
+    margin-left: -48px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    filter: drop-shadow(-23px 0px 8px rgb(15, 15, 15));
+}

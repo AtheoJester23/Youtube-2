@@ -1,0 +1,922 @@
+.Grid{
+    margin-top: 135px;
+    margin-left: 88px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    column-gap: 17px;
+    row-gap: 15px;
+    display: grid;
+    padding-right: 17px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 885px){
+    .Grid{ 
+        grid-template-columns: 1fr 1fr;
+        margin-left: 15px;
+        font-size: 30;
+    }
+
+    .shorts-more{
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .Padding_for_button{
+        opacity: 0;
+    }
+
+    .filled_shorts{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 885px){
+    .Shorts-section-content{
+        margin-left: 0px;
+    }
+
+    
+}
+
+
+@media (max-width: 885px){
+    Title{
+        font-size: 50px;
+    }
+}
+
+hr {
+    height: 4.5px; 
+    background-color: rgb(65, 65, 65); 
+    border: none; 
+    margin-left:88.5px;
+    margin-right: 16px;
+    margin-top: 1px;
+    border-top: rgb(65, 65, 65);
+}
+
+@media (max-width: 885px){
+    hr{
+        margin-left: 16px;
+    }
+}
+
+
+
+@media (min-width: 886px) and (max-width: 1279px){
+    .Grid,
+    .another_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px){
+    .Grid,
+    .another_grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+
+.Vid-box{
+    display: inline-block;
+    margin-bottom: 30px;
+   /* width: 154.115; */
+    position: relative;
+   
+}
+
+.Upper-part{
+    position: relative;
+}
+
+.Lower-part{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    position: relative;
+    cursor: pointer;
+}
+
+.Left-part{
+    width: 44px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Right-part{
+    display: inline-block;
+    width: 210px;
+}
+
+.Thumbnail{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 11px;
+    margin-bottom: 9px;
+}
+
+.Lower-part:active .Vid-box{
+    opacity: 0.5;
+    background-color: gray;
+}
+
+.Dots{
+    height: 22.5px;
+    width: 21.3px;
+    filter: brightness(100) saturate(100);
+
+}
+
+.Vid-box .More-option{
+    position: absolute;
+    background-color: rgb(15, 15, 15);
+    height: 40px;
+    width: 40px;
+    bottom: 45px;
+    right: -12.69px;
+    opacity: 0;
+    border: none;
+    
+}
+
+.Vid-box:hover .More-option{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Profile{
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+}
+
+.Title{
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top:1px;
+    margin-bottom: 9.5px;
+    text-decoration: none;
+}
+
+.Vid-box:active{
+    cursor: pointer;
+}
+
+.YT-Channel{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    margin-bottom: 1.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Views-and-date{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.duration{
+    position: absolute;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    bottom: 15px;
+    right: 4.5px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 5px;
+    
+
+}
+
+.video-link{
+    text-decoration: none;
+}
+
+.Channel_name{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    position: relative;
+}
+
+.Channel_name .Name_Pop{
+    position: absolute;
+    background-color: rgb(102, 102, 102, 0.8);
+    color: white;
+    top: -56px;
+    left: -9px;
+    padding: 8px 9px 10px 9px;
+    border-radius: 3.8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Channel_name:hover .Name_Pop{
+    opacity: 1;
+    color: white;
+    
+}
+
+.Channel_name:hover{
+    color: white;
+}
+
+.verified-channel-section .verified-channel{
+    position: absolute;
+    background-color: rgb(102, 102, 102, 0.8);
+    color: white;
+    top: -54.3px;
+    margin-left: -23px; 
+    /* left: 33.8px; */
+    padding: 8px 9px 10px 9px;
+    border-radius: 3.8px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.verified-channel-section:hover .verified-channel{
+    opacity: 1;
+}
+
+.verified{
+    cursor: pointer;
+}
+
+.filled_shorts{
+    height: 20px;
+    width: 15.7px;
+    margin-left: 103px;
+    margin-top: 24px;
+}
+
+.Shorts-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 17px;
+    margin-top: -3px;
+}
+
+.shorts-text{
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-left: 13.3px;
+    
+}
+
+.Shorts-Right{
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+}
+
+.close-shorts{
+    height: 30px;
+    width: 30px;
+    margin-top: 20.5px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    position: relative;
+
+}
+
+.close-shorts .Pop-close-shorts{
+    position: absolute;
+    top: 3px;
+    border-radius: 4px;
+    background-color: rgb(85, 85, 85);
+    color: rgb(240, 240, 240);
+    font-family: Roboto;
+    font-size: 12.5px;
+    left: -112px;
+    padding: 9px 10px 9px 10px;
+    opacity: 0;
+    transition: opacity 0.22s;
+    pointer-events: none;
+}
+
+.close-shorts:hover .Pop-close-shorts{
+    opacity: 1;
+}
+
+.close-shorts:hover{
+    background-color: rgb(68, 68, 68);
+    
+}
+
+.close-icon{
+    height: 50px;
+    width: 50px;
+}
+
+/*Grid*/
+.Shorts-section-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 23px;
+    padding-left: 87.8px;
+    margin-bottom: 20px;
+    column-gap: 17.5px;
+    padding-right: 15px;
+
+}
+
+@media (max-width: 1124px){
+    .Shorts-section-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1125px) and (max-width: 1279px){
+    .Shorts-section-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (min-width: 1280px){
+    .Shorts-section-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+/*Vid-box*/
+.Shorts-section-videos{
+    display: inline-block;
+    position: relative;
+    /* z-index: 200; */
+}
+
+.Shorts-section-videos .Shorts-more-option{
+    position: absolute;
+    bottom: 38.9px;
+    right: -1px;
+    border-radius: 20px;
+    border: none;
+    padding: 1px;
+    background-color: rgb(15, 15, 15);
+    opacity: 0;
+    pointer-events: none;
+    /* z-index: 2000; */
+}
+
+.Shorts-section-videos:hover .Shorts-more-option{
+    opacity: 1;
+}
+
+.shorts-dots{
+    height: 22.5px;
+    width: 21.3px;
+    filter: brightness(100) saturate(100);
+}
+
+/*Upper Part*/
+.Shorts-thumbnail{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 11px;
+}
+
+
+.Shorts-link{
+    text-decoration: none;
+}
+
+.Shorts-Video-Title{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 24px 0px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            /* line-clamp: 2;  */
+    -webkit-box-orient: vertical;
+    margin-bottom: 6px;
+    
+}
+
+
+.Shorts-Views{
+    font-size: 14px;
+    color: rgb(167, 167, 167);
+}
+
+.shorts-more{
+    /* margin-left: 85px; */
+    margin-right: 100px;
+    background-color: rgb(15, 15, 15);
+    display: block;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: none;
+    position: relative;
+    z-index: 500;
+}
+
+
+
+.shorts-more:hover{
+    cursor: pointer;
+    background-color: rgb(77, 77, 77);
+    border-top: 10px;
+}
+
+.shorts-more .shorts-more-pop{
+    position: absolute;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Roboto;
+    bottom: -55px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s;
+}
+
+.shorts-more:hover .shorts-more-pop{
+    opacity: 1;
+}
+
+.button_icon_size{
+    height: 50px;
+    width: 50px;
+}
+
+.Padding_for_button{
+    padding-left: 85px;
+    padding-right: 15px;
+
+}
+
+.another_grid{
+    margin-left: 88px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 17px;
+    row-gap: 15px;    
+    padding-right: 17px;
+}
+
+.Thumbnail_2{
+    width: 100%;
+    border-radius: 11px;
+    margin-bottom: 9px;
+}
+
+.Profile_2{
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+}
+
+/* .Grid{
+    margin-top: 135px;
+    margin-left: 88px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    column-gap: 17px;
+    row-gap: 15px;
+    display: grid;
+    padding-right: 17px;
+}
+
+.Vid-box{
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+   
+}
+
+.Upper-part{
+    position: relative;
+}
+
+*/
+
+
+.vid_box_lower_part{
+    display: grid;
+    grid-template-columns: 47px 1fr;
+
+
+}
+
+.vid_box_lower_left_part{
+    width: 44px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.vid_box_lower_right_title{
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            /* line-clamp: 2;  */
+    -webkit-box-orient: vertical;
+    margin-bottom: 9.5px;
+}
+
+.vid_box_lower_right_part{
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+.vid_box_title{
+    text-decoration: none;
+}
+
+.vid_box_channel_and_views{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vid_box_views_and_date{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.vid_box_verified{
+    position: relative;
+}
+
+.vid_box_verified .vid_box_verified_pop{
+    position: absolute;
+    background-color: rgb(102, 102, 102, 0.9);
+    color: rgb(227, 227, 227);
+    top: -54.3px;
+    margin-left: -23px; 
+    /* left: 33.8px; */
+    padding: 8px 9px 10px 9px;
+    border-radius: 3.8px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s;
+}
+
+.vid_box_verified:hover .vid_box_verified_pop{
+    opacity: 1;
+}
+
+.vid_box_channel{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.vid_box_channel:hover{
+    color: white;
+}
+
+.vid_box_channel_name .vid_box_channel_pop{
+    position: absolute;
+    background-color: rgb(102, 102, 102, 0.9);
+    color: rgb(227, 227, 227);
+    top: -56px;
+    left: -9px;
+    padding: 8px 9px 10px 9px;
+    border-radius: 3.8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s;
+}
+
+.vid_box_channel_name:hover .vid_box_channel_pop{
+    opacity: 1;
+}
+
+.vid_box_channel_name:hover{
+    color: rgb(235, 235, 235);
+}
+
+.no_text_decoration{
+    text-decoration: none;
+}
+
+.vid_box_channel_name{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    position: relative;
+}
+
+
+
+.vid_box_upper_part{
+    position: relative;
+}
+
+.vid_box_upper_part .keep_hovering{
+    position: absolute;
+    color: white;
+    background-color: black;
+    bottom: 15.5px;
+    right: 4px;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 6px 8px 7px 8px;
+    border-radius: 2.5px;
+    opacity: 0;
+}
+
+.vid_box_upper_part:hover .keep_hovering{
+    opacity: 1;
+}
+
+.vid_box_time{
+    position: absolute;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    bottom: 15px;
+    right: 4.5px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 5px;
+
+}
+
+.vid_box_2{
+    cursor: pointer;
+}
+
+.Post{
+    margin-top: 35px;
+    margin-left: 95px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.Post-vid-box{
+    background-color: rgb(33, 33, 33);
+    padding: 12px 24px 0px 24px;
+    border-radius: 11px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.2);
+    border-width: 1px;
+}
+
+.YT-Post-section{
+    margin-top: 35px;
+    margin-left: 88px;  
+    display: grid;
+    grid-template-columns: 273px 273px 273px;  
+    grid-template-rows: 153px 153px 153px;
+    column-gap: 17px;
+}
+
+.Post-Profile-Pic{
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+}
+
+.Profile-and-date{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Post-Name-and-Date{
+    font-size: 11px;
+    color: rgb(170, 170, 170);
+    margin-left: 14px;
+}
+
+.Text-and-Pic{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    cursor: pointer;
+}
+
+.Text-inside-post{
+    color: rgb(241, 241, 241);
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            /* line-clamp: 2;  */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 135px;
+    position: relative;
+}
+
+.Post-Pictures{
+    height: 70px;
+    width: 70px;
+    border-radius: 12px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.feedback{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Post-Likes{
+    background-color: rgb(33, 33, 33);
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+    transition: background-color 0.10s;
+    position: relative;
+}
+
+.Post-Likes .Post-like-pop,
+.Post-Dislikes .Post-dislike-pop{
+    position: absolute;
+    color: white;
+    top: -40px;
+    background-color: rgb(99, 99, 99, 0.8);
+    padding: 8px 8px 8px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+
+.Post-Likes:hover .Post-like-pop,
+.Post-Dislikes:hover .Post-dislike-pop{
+    opacity: 1;
+}
+
+.Post-Likes:hover,
+.Post-Dislikes:hover{
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+
+
+.Post-Dislikes{
+    background-color: rgb(33, 33, 33);
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    position: relative;
+}
+
+.Like-and-Dislike-icon{
+    height: 26px;
+    width: 26px;
+}
+
+.Dislike-icon{
+    height: 22px;
+    width: 22px;
+}
+
+.Post-vid-box-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+}
+
+.Post-vid-box-dots{
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    width: 24px;
+    background-color: rgb(33, 33, 33);
+    margin-right: -6px;
+}
+
+.Post-vid-box-dots:hover{
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+.Post-vid-box-dots-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.Post-vid-box-right{
+    display: flex;
+    flex-direction: row;
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.Comments{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    border: none;
+    color: rgb(170, 170, 170);
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    font-weight: 500;
+    position: relative;
+}   
+
+.Comments .Comments-Pop{
+    position: absolute;
+    color: white;
+    bottom: -55px;
+    background-color: rgb(99, 99, 99, 0.8);
+    padding: 8px 8px 8px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    font-weight: normal;
+}
+
+.Comments:hover .Comments-Pop{
+    opacity: 1;
+}
+
+.Comments:hover
+/*.Comment-Icon:hover*/{
+    background-color: rgb(88, 88, 88);
+    border-radius: 20px;
+    padding-right: 0px 2px 0px 2px;
+    cursor: pointer;
+}
+
+.Comment-Icon-button{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(33, 33, 33);
+    border: none;
+
+}
+
+.Comment-Icon{
+    height: 20px;
+    width: 20px;
+}
+
+.External-link{
+    text-decoration: none;
+    color: rgb(62, 166, 255);
+}
+
+.External-link:visited{
+    text-decoration: none;
+    color: rgb(62, 166, 255);
+}
