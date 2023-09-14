@@ -10,6 +10,7 @@
     z-index: 2023;
     color: white;
     background-color: rgb(15, 15, 15);
+    /* opacity: 0; */
 }
 
 div{
@@ -324,26 +325,29 @@ button{
     cursor: pointer;
 }
 
-
-.Below-main-header{
-    position: fixed;
-    background-color: rgb(15, 15, 15);
-    top: 56px;   
-    left: 70px;
-    right: 0;
-    height: 56px;
-    align-items: center;
-    display: flex;
-    z-index: 2000;
-}
-
 @media (max-width: 790px){
     .Below-main-header{
         left: -2px;
     }
 }
 
+@media (min-width: 791px) and (max-width: 884px){
+    .Below-main-header{
+        left: 70px;
+    }
+}
 
+@media (min-width: 885px) and (max-width: 1280px){
+    .Below-main-header{
+        left: 70px;
+    }
+}
+
+@media(min-width: 1315px) and (max-width: 1639px){
+    .Below-main-header{
+        left: 238px;
+    }
+}
 
 .All-button{
     padding: 8px 12.3px;
@@ -376,6 +380,9 @@ button{
     display: flex;
     background-color: rgb(40, 40, 40);    
     transition: background-color 0.30s;
+    padding-right: 15px;
+    position: relative;
+    
 }
 
 .Below-main-button:hover{
@@ -391,16 +398,56 @@ button{
     color: white;
 }
 
-.Below-main-button-next{
-    padding: 13.5px 13.5px;
+
+.Box-of-next{
     background-color: rgb(15, 15, 15);
-    border: none;  
-    border-radius: 20px;
+    float: left;
+    width: 60px;
+    height: 50px;
+    /* margin-left: -48px; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    filter: drop-shadow(-23px 0px 8px rgb(15, 15, 15));
+    padding-right: 15;
+    position: absolute;
+    right: 0;
+}
+
+.Below-main-button-next{
+    background-color: rgb(15, 15, 15);
+    border-radius: 30px;
+    padding: 13.5px;
+    margin-right: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    position: relative;
+    transition: background-color 0.15s;
 }
 
 .Below-main-button-next:hover{
     background-color: rgb(63, 63, 63);
-    cursor: pointer;;
+    cursor: pointer;
+}
+
+.Below-main-button-next .Pop-next{
+    position: absolute;
+    background-color: rgb(89, 89, 89);
+    margin-top: 98px;
+    font: Roboto;
+    font-size: 12px;
+    padding: 9.6px 8px 9.8px 8px;
+    border-radius: 4px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.Below-main-button-next:hover .Pop-next{
+    opacity: 1;    
 }
 
 .Next-category{
@@ -410,14 +457,15 @@ button{
     filter: invert(1);
 }
 
-.Box-of-next{
+.Below-main-header{
+    position: fixed;
     background-color: rgb(15, 15, 15);
-    /* float: left; */
-    width: 60px;
-    height: 50px;
-    margin-left: -48px;
-    display: flex;
+    top: 56px;   
+    /* left: 70px; */
+    right: 0;
+    height: 56px;
     align-items: center;
-    justify-content: right;
-    filter: drop-shadow(-23px 0px 8px rgb(15, 15, 15));
+    display: flex;
+    z-index: 2000;
+    /* opacity: 0; */
 }
